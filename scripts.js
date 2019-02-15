@@ -1,4 +1,4 @@
-$.when( $.ready ).then(function{
+$.when( $.ready ).then(function() {
 	$( "[class='step__wrapper']" ).addClass("is-active");
 } );
 
