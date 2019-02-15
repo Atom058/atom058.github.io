@@ -1,101 +1,102 @@
 body {
-  font-family: sans-serif;
-  text-align: center;
-  @media screen and (max-width: 990px){
-    font-size: 1.5rem;
-  }
+	font-family: sans-serif;
+	text-align: center;
+	@media screen and (max-width: 990px){
+		font-size: 1.5rem;
+	}
 }
 
 a {
-  color: #0ebeff;
-  &:not(:hover) {
-    text-decoration: none;
-  }
+	color: #0ebeff;
+	&:not(:hover) {
+		text-decoration: none;
+	}
 }
 
 .site {
-  min-height: 100vh;
+	min-height: 100vh;
 }
 
-.f {
-  display: flex;
+/*Flexbox things*/
+.flexbox {
+	display: flex;
 }
 .jcc {
-  justify-content: center;
+	justify-content: center;
 }
 .aic {
-  align-items: center;
+	align-items: center;
 }
 
 .mha {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .px2 {
-  padding: 2rem;
+	padding: 2rem;
 }
 
 .step__wrapper {
-  transition: opacity 0.3s, transform 0.3s;
-  transform: translateY(20px);
-  opacity: 0;
-  &.is-active {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+	transition: opacity 0.3s, transform 0.3s;
+	transform: translateY(20px);
+	opacity: 0;
+}
+.step__wrapper.is-active {
+		transform: translateY(0px);
+		opacity: 1;
 }
 
 .button {
-  transiton: all 0.25s;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 20px;
-  padding: 1.1rem 2rem 1rem;
-  &:hover {
-    background-color: black;
-    color: white;
-  }
+	transiton: all 0.25s;
+	border: 1px solid black;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 20px;
+	padding: 1.1rem 2rem 1rem;
 
-  @media screen and (max-width: 990px){
-    border: 3px solid black;
-    padding: 1rem 2rem 1rem;
-  }
+	@media screen and (max-width: 990px){
+		border: 3px solid black;
+		padding: 1rem 2rem 1rem;
+	}
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
 }
 
 .container--q {
-  max-width: 400px;
+	max-width: 400px;
 }
 
 .quiz__options {
-  > div {
-    transition: all 0.25s;
-    padding: 1rem 1.3rem;
-    cursor: pointer;
-    border: 2px solid gray;
-    margin: 4px;
-    &:hover {
-      background-color: gray;
-      color: white;
-    }
-    &.cg {
-      background-color: green;
-      color: white;
-      border-color: green;
-    }
-    &.cr {
-      background-color: red;
-      color: white;
-      border-color: red;
-    }
-    &.cw {
-      opacity: 0.5;
-    }
-
-    @media screen and (max-width: 990px){
-      border: 3px solid black;
-      margin-left: 0.2em;
-      padding: 1rem 1rem 1rem;
-    }
-  }
+	@media screen and (max-width: 990px){
+		border: 3px solid black;
+		margin-left: 0.2em;
+		padding: 1rem 1rem 1rem;
+	}
+}
+.quiz__options > div {
+		transition: all 0.25s;
+		padding: 1rem 1.3rem;
+		cursor: pointer;
+		border: 2px solid gray;
+		margin: 4px;
+}
+.quiz__options > div:hover {
+	background-color: gray;
+	color: white;
+}
+.quiz__options.cg {
+			background-color: green;
+			color: white;
+			border-color: green;
+}
+.quiz__options.cr {
+			background-color: red;
+			color: white;
+			border-color: red;
+}
+.quiz__options.cw {
+			opacity: 0.5;
 }
