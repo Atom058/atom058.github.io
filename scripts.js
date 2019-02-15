@@ -2,6 +2,11 @@ $.when( $.ready ).then(function() {
 	$( "[class='step__wrapper']" ).addClass("is-active");
 } );
 
+function remove(){
+	$("[class='step__wrapper']").empty();
+	$("[class='step__wrapper']").append("<h1>We replaced something!</h1>");
+}
+
 /*  1: {
     question: `Do you need a shared consistent data store?`,
     fact: `If you don't need a consistent data store, you don't need a Blockchain. Consider a spreadsheet.`,
