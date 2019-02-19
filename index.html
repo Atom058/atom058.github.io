@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<script type="text/javascript" src="jquery-3.3.1.slim.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
@@ -11,10 +11,10 @@
 </head>
 
 <body>
-	<div className="flexbox jcc aic site">
-		<div class="step__wrapper">
-			<h1>You don't need a Blockchain.</h1>
-			<div class="button" onclick="remove()">I think I need a blockchain...</div>
-		</div>
+	<div class="flexcontainer site aic jcc">
+		<h1 class="flexrow">You don't need a Blockchain.</h1>
+		<div class="flexrow" id="alts">
+			<button data="0-0">I think I need a blockchain...</button>
+		</div>		
 	</div>
 </body>

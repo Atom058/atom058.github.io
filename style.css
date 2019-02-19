@@ -8,20 +8,70 @@ a {
 	color: #0ebeff;
 }
 
+h1 {
+	font-size: 2.8rem;
+}
+
+h2 {
+	font-size: 2.0rem;
+}
+
+p, button {
+	font-size: 1.0rem;
+}
+
 .site {
 	min-height: 100vh;
 }
 
+.container {
+
+}
+
 /*Flexbox things*/
-.flexbox {
+.flexcontainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexrow {
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-evenly;
 	display: flex;
 }
-.jcc {
-	justify-content: center;
-}
+
 .aic {
 	align-items: center;
 }
+
+.jcc {
+	justify-content: center;
+}
+
+button {
+	min-width: 150px;
+	flex: 0 1 auto;
+	padding: 1.5rem;
+	transition: all 0.25s;
+	border: 2px solid rgb(10,10,10);
+	background: white;
+}
+
+button:hover {
+	background: black;
+	color: white;
+}
+
+.wrong {
+	background-color: red;
+}
+
+.correct {
+	background-color: green;
+}
+
+/*
 
 .mha {
 	margin: 0 auto;
@@ -88,3 +138,4 @@ a {
 .quiz__options.cw {
 			opacity: 0.5;
 }
+*/
